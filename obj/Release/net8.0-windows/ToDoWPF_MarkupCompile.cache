@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Desiderium HCS\source\repos\ToDoWpf\obj\Debug\net8.0-windows\
+C:\Users\Desiderium HCS\source\repos\ToDoWpf\obj\Release\net8.0-windows\
 ToDoWPF
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\Desiderium HCS\source\repos\ToDoWpf\App.xaml
 1-487866684
 
-91982974545
+9710965299
 203-1434459577
 View\MainWindow.xaml;
 

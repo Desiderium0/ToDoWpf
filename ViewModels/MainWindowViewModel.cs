@@ -65,8 +65,6 @@ namespace ToDoWPF.ViewModels
                 Application.Current.MainWindow.WindowState = WindowState.Normal;
         }
         #endregion
-
-
         #endregion
 
         public MainWindowViewModel()

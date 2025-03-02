@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ToDoWPF.Models
 {
-    internal class Task
+    internal class TaskModel
     {
         public int Id { get; set; }
         public string Title { get; set; } = null!;
@@ -15,6 +15,5 @@ namespace ToDoWPF.Models
         public DateTime Created { get; set; }
         public DateTime LastUpdated { get; set; }
         public bool IsCompleted { get; set; }
-        public List<Task> Tasks { get; set; }
     }
 }
