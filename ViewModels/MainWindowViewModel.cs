@@ -18,10 +18,26 @@ namespace ToDoWPF.ViewModels
     {
         private readonly TaskService _taskService = new TaskService();
         private ObservableCollection<TaskModel> _tasks;
+        public TaskModel _selectedTask;
         private string? _Title;
 
+        /*---------------------------------------------------------------------------------*/
+
+        public MainWindowViewModel()
+        {
+            #region Команды
+
+            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecuted);
+            MinimizeApplicationCommand = new LambdaCommand(OnMinimizeApplicationCommandExecuted, CanMinimizeApplicationCommandExecuted);
+            MaximizeApplicationCommand = new LambdaCommand(OnMaximizeApplicationCommandExecuted, CanMaximizeApplicationCommandExecuted);
+            GetTasksCommand = new LambdaCommand(async (obj) => await OnGetTasksCommandExecuted(obj), CanGetTasksCommandExecuted);
+            #endregion
+        }
+
+        /*---------------------------------------------------------------------------------*/
 
         #region Properties
+
         public string Title
         {
             get => _Title;
@@ -33,7 +49,16 @@ namespace ToDoWPF.ViewModels
             get => _tasks;
             set => Set(ref _tasks, value);
         }
+
+        public TaskModel SelectedTask
+        {
+            get => _selectedTask;
+            set => Set(ref _selectedTask, value);
+        }
+
         #endregion
+
+        /*---------------------------------------------------------------------------------*/
 
         #region Commands
         #region CloseApplicationCommandExecuted
@@ -84,16 +109,9 @@ namespace ToDoWPF.ViewModels
         #endregion
         #endregion
 
-        public MainWindowViewModel()
-        {
-            #region Команды
+        /*---------------------------------------------------------------------------------*/
 
-            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecuted);
-            MinimizeApplicationCommand = new LambdaCommand(OnMinimizeApplicationCommandExecuted, CanMinimizeApplicationCommandExecuted);
-            MaximizeApplicationCommand = new LambdaCommand(OnMaximizeApplicationCommandExecuted, CanMaximizeApplicationCommandExecuted);
-            GetTasksCommand = new LambdaCommand(async (obj) => await OnGetTasksCommandExecuted(obj), CanGetTasksCommandExecuted);
-            #endregion
-        }
+        
     }
 }
     

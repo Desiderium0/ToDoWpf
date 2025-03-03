@@ -58,18 +58,22 @@
                 </Grid>
 
                 <Grid Grid.Row="1">
-                    <Border BorderBrush="#f0f0f0" BorderThickness="0 0 2 0">
-                        <Grid Margin="15 5 15 13">
-                            <ListView VerticalAlignment="Top" ItemsSource="{Binding Tasks}" DisplayMemberPath="Description"/>
-                            <Button Background="#1B75D0" BorderThickness="0" Foreground="White" VerticalAlignment="Bottom"
-                                    Command="{Binding GetTasksCommand}">
-                                <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Add"/>
-                            </Button>
-                        </Grid>
-                    </Border>
+                    <DockPanel Margin="5 5 5 13">
+                        <GroupBox DockPanel.Dock="Top" Header="Задачи" Background="#f2f2f2" BorderThickness="0">
+                            <ListView VerticalAlignment="Top" ItemsSource="{Binding Tasks}" DisplayMemberPath="Title"
+                                      SelectedItem="{Binding SelectedTask}"/>
+                        </GroupBox>
+                        <Button DockPanel.Dock="Bottom" Margin="0 5 0 0" Background="#1B75D0" BorderThickness="0" Foreground="White" VerticalAlignment="Bottom" Command="{Binding GetTasksCommand}">
+                            <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Add"/>
+                        </Button>
+                    </DockPanel>
                 </Grid>
 
-                <Grid Background="#f9f9f9" Grid.Column="1" Grid.Row="1">
+                <Grid Background="#f9f9f9" Grid.Column="1" Grid.Row="1" Margin="5 5 5 13">
+                    <GroupBox Background="#f2f2f2" BorderThickness="0"
+                              Header="{Binding SelectedTask.Title, FallbackValue='Задача', TargetNullValue='Выберете задачу'}">
+
+                    </GroupBox>
                 </Grid>
             </Grid>  
         </materialDesign:Card>
