@@ -60,8 +60,9 @@
                 <Grid Grid.Row="1">
                     <Border BorderBrush="#f0f0f0" BorderThickness="0 0 2 0">
                         <Grid Margin="15 5 15 13">
-                            <ListView VerticalAlignment="Top" ItemsSource="{Binding }"/>
-                            <Button Background="#1B75D0" BorderThickness="0" Foreground="White" VerticalAlignment="Bottom">
+                            <ListView VerticalAlignment="Top" ItemsSource="{Binding Tasks}" DisplayMemberPath="Description"/>
+                            <Button Background="#1B75D0" BorderThickness="0" Foreground="White" VerticalAlignment="Bottom"
+                                    Command="{Binding GetTasksCommand}">
                                 <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Add"/>
                             </Button>
                         </Grid>

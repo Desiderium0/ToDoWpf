@@ -27,3 +27,4 @@ C:\Users\Desiderium HCS\source\repos\ToDoWPF\obj\Debug\net8.0-windows\View\MainW
 C:\Users\Desiderium HCS\source\repos\ToDoWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Desiderium HCS\source\repos\ToDoWPF\bin\Debug\net8.0-windows\FontAwesome5.Net.dll
 C:\Users\Desiderium HCS\source\repos\ToDoWPF\bin\Debug\net8.0-windows\FontAwesome5.dll
+C:\Users\Desiderium HCS\source\repos\ToDoWpf\obj\Debug\net8.0-windows\ToDoWPF.sourcelink.json
