@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\infrastructure\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:infrastructure\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -34,11 +30,40 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\View\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\View\\MainWindow.xaml",
+              "RelativeToolTip": "View\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-09T11:49:50.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TaskModel.cs",
+              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Models\\TaskModel.cs",
+              "RelativeDocumentMoniker": "Models\\TaskModel.cs",
+              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Models\\TaskModel.cs",
+              "RelativeToolTip": "Models\\TaskModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T11:29:33.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,60 +73,22 @@
               "RelativeDocumentMoniker": "View\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\View\\MainWindow.xaml.cs",
               "RelativeToolTip": "View\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAawBcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T04:28:14.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TaskModel.cs",
-              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Models\\TaskModel.cs",
-              "RelativeDocumentMoniker": "Models\\TaskModel.cs",
-              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Models\\TaskModel.cs",
-              "RelativeToolTip": "Models\\TaskModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T03:53:48.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\View\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "View\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\View\\MainWindow.xaml",
-              "RelativeToolTip": "View\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-02T16:51:47.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaskService.cs",
-              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Infrastructure\\Services\\TaskService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Services\\TaskService.cs",
-              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Infrastructure\\Services\\TaskService.cs",
-              "RelativeToolTip": "Infrastructure\\Services\\TaskService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAxwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T14:16:21.164Z",
+              "WhenOpened": "2025-03-09T09:14:33.997Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAkwIAAAAAAAAAAAAAAAA==",
+              "Title": "TaskService.cs",
+              "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Infrastructure\\Services\\TaskService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\TaskService.cs",
+              "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Infrastructure\\Services\\TaskService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\TaskService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIA+wBUAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:41:26.064Z",
+              "WhenOpened": "2025-03-09T07:54:15.313Z",
               "EditorCaption": ""
             }
           ]

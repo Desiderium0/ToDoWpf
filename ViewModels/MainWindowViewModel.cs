@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics.SymbolStore;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -32,7 +33,9 @@ namespace ToDoWPF.ViewModels
             CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecuted);
             MinimizeApplicationCommand = new LambdaCommand(OnMinimizeApplicationCommandExecuted, CanMinimizeApplicationCommandExecuted);
             MaximizeApplicationCommand = new LambdaCommand(OnMaximizeApplicationCommandExecuted, CanMaximizeApplicationCommandExecuted);
-            GetTasksCommand = new LambdaCommand(async (obj) => await OnGetTasksCommandExecuted(obj), CanGetTasksCommandExecuted);
+            DeleteTaskCommand = new LambdaCommand(async (obj) => await OnDeleteTaskCommandExecuted(obj), CanDeleteTaskCommandExecuted);
+            AddTaskCommand = new LambdaCommand(async (obj) => await OnAddTaskCommandExecuted(obj), CanAddTaskCommandExecuted);
+            PutTaskCommand = new LambdaCommand(async (obj) => await OnPutTaskCommandExecuted(obj), CanPutTaskCommandExecuted);
             #endregion
         }
 
@@ -97,18 +100,60 @@ namespace ToDoWPF.ViewModels
         }
         #endregion
 
+        #region DeleteTaskCommand
+
+        
+
+        #endregion
+
         #region Requests
-        public ICommand GetTasksCommand { get; }
-        public bool CanGetTasksCommandExecuted(object p) => true;
-        public async Task OnGetTasksCommandExecuted(object p)
+        public ICommand AddTaskCommand { get; }
+        public bool CanAddTaskCommandExecuted(object p) => true;
+        public async Task OnAddTaskCommandExecuted(object p)
         {
-            var listTasks = await _taskService.GetTaskAsync();
-            if (listTasks != null)
+            try
             {
-                Tasks = new ObservableCollection<TaskModel>(listTasks);
+                await _taskService.AddTaskAsync();
+                await LoadTasksAsync();
+            }
+            catch
+            {
+                MessageBox.Show("API не доступен.", "Ошибка!");
             }
         }
+
+        public ICommand DeleteTaskCommand { get; }
+        public bool CanDeleteTaskCommandExecuted(object p) => true;
+        public async Task OnDeleteTaskCommandExecuted(object p)
+        {
+            try
+            {
+                await _taskService.DeleteTaskAsync(SelectedTask);
+                await LoadTasksAsync();
+            }
+            catch
+            {
+                MessageBox.Show("API не доступен.", "Ошибка!");
+            }
+        }
+
+        public ICommand PutTaskCommand { get; }
+        public bool CanPutTaskCommandExecuted(object p) => true;
+        public async Task OnPutTaskCommandExecuted(object p)
+        {
+            try
+            {
+                await _taskService.PutTaskAsync(SelectedTask);
+                await LoadTasksAsync(); // наверное по другому можно сделать
+            }
+            catch
+            {
+                MessageBox.Show("API не доступен.", "Ошибка!");
+            }
+        }
+
         #endregion
+
         #endregion
 
         /*---------------------------------------------------------------------------------*/
