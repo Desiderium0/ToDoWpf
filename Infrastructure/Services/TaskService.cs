@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net.Http;
 using System.Net.WebSockets;
@@ -8,11 +9,12 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Windows;
 using ToDoWPF.Models;
 
 namespace ToDoWPF.Infrastructure.Services
 {
-    class TaskService
+    internal class TaskService
     {
         private HttpClient _httpClient;
         private readonly string _url = "https://localhost:7290/api/ToDo";

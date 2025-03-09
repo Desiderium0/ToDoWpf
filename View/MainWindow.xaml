@@ -72,8 +72,23 @@
                 <Grid Background="#f9f9f9" Grid.Column="1" Grid.Row="1" Margin="5 5 5 13">
                     <GroupBox Background="#f2f2f2" BorderThickness="0"
                               Header="{Binding SelectedTask.Title, FallbackValue='Задача', TargetNullValue='Выберете задачу'}">
+                    <StackPanel>
+                    <Label Content="Заголовок:" />
+                    <Label Content="{Binding SelectedTask.Title}" />
 
-                    </GroupBox>
+                    <Label Content="Описание:" Margin="0,10,0,0" />
+                    <Label Content="{Binding SelectedTask.Description}" />
+
+                    <Label Content="Создано:" Margin="0,10,0,0" />
+                    <Label Content="{Binding SelectedTask.Created}" />
+
+                    <Label Content="Последнее обновление:" Margin="0,10,0,0" />
+                    <Label Content="{Binding SelectedTask.LastUpdated}" />
+
+                    <Label Content="Выполнено:" Margin="0,10,0,0" />
+                    <CheckBox IsChecked="{Binding SelectedTask.IsCompleted}"/>
+                    </StackPanel>
+                        </GroupBox>
                 </Grid>
             </Grid>  
         </materialDesign:Card>

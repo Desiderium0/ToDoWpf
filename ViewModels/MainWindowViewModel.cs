@@ -19,7 +19,8 @@ namespace ToDoWPF.ViewModels
         private readonly TaskService _taskService = new TaskService();
         private ObservableCollection<TaskModel> _tasks;
         public TaskModel _selectedTask;
-        private string? _Title;
+        private string? _title;
+
 
         /*---------------------------------------------------------------------------------*/
 
@@ -27,6 +28,7 @@ namespace ToDoWPF.ViewModels
         {
             #region Команды
 
+            LoadTasksAsync();
             CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecuted);
             MinimizeApplicationCommand = new LambdaCommand(OnMinimizeApplicationCommandExecuted, CanMinimizeApplicationCommandExecuted);
             MaximizeApplicationCommand = new LambdaCommand(OnMaximizeApplicationCommandExecuted, CanMaximizeApplicationCommandExecuted);
@@ -40,8 +42,8 @@ namespace ToDoWPF.ViewModels
 
         public string Title
         {
-            get => _Title;
-            set => Set(ref _Title, value);
+            get => _title;
+            set => Set(ref _title, value);
         }
 
         public ObservableCollection<TaskModel> Tasks
@@ -111,7 +113,18 @@ namespace ToDoWPF.ViewModels
 
         /*---------------------------------------------------------------------------------*/
 
-        
+        private async Task LoadTasksAsync()
+        {
+            var taskList = await _taskService.GetTaskAsync();
+            if (taskList != null)
+            {
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    Tasks = new ObservableCollection<TaskModel>(taskList);
+                });
+            }
+        }
     }
 }
+
     

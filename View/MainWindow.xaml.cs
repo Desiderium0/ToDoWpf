@@ -8,6 +8,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ToDoWPF.Infrastructure.Services;
+using ToDoWPF.ViewModels;
 
 namespace ToDoWPF
 {
@@ -19,6 +21,7 @@ namespace ToDoWPF
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainWindowViewModel();
         }
     }
 }
