@@ -15,6 +15,17 @@
         <vm:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
+        <Grid.Resources>
+            <Style TargetType="ListView">
+                <Setter Property="Control.FontFamily" Value="Leelawadee UI"/>
+                <Setter Property="ContextMenu.FontSize" Value="16"/>
+                <Setter Property="Control.FontWeight" Value="Normal"/>
+                <Setter Property="Control.Background" Value="#e9e9e9" />
+                <Setter Property="Control.Foreground" Value="Black" />
+                <Setter Property="ContextMenu.BorderThickness" Value="0"/>
+            </Style>
+
+        </Grid.Resources>
         <materialDesign:Card Margin="10" UniformCornerRadius="10">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -59,53 +70,58 @@
 
                 <Grid Grid.Row="1">
                     <DockPanel Margin="5 5 5 13">
-                        <GroupBox DockPanel.Dock="Top" Header="Задачи" Background="#f2f2f2" BorderThickness="0">
-                            <ListView VerticalAlignment="Top" ItemsSource="{Binding Tasks}" DisplayMemberPath="Title"
-                                      SelectedItem="{Binding SelectedTask}"/>
+                        <GroupBox DockPanel.Dock="Top" Header="Задачи" Background="#f2f2f2" BorderThickness="0" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold">
+                            <ListView VerticalAlignment="Top" ItemsSource="{Binding Tasks}" DisplayMemberPath="Title" 
+                                       SelectedItem="{Binding SelectedTask}" />
                         </GroupBox>
-                        <Button DockPanel.Dock="Bottom" Margin="5 5 0 0" Background="#1B75D0" BorderThickness="0" Foreground="White" VerticalAlignment="Bottom" Command="{Binding AddTaskCommand}">
+                        <Button DockPanel.Dock="Bottom" Margin="5 5 0 0" Height="40"
+                                Background="#1B75D0" BorderThickness="0"
+                                Foreground="White" VerticalAlignment="Bottom"
+                                Command="{Binding AddTaskCommand}">
                             <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Add"/>
                         </Button>
                     </DockPanel>
                 </Grid>
 
                 <Grid Background="#f9f9f9" Grid.Column="1" Grid.Row="1" Margin="5 5 5 13">
-                    <GroupBox Background="#f2f2f2" BorderThickness="0"
+                    <GroupBox Background="#f2f2f2" BorderThickness="0" FontFamily="Leelawadee UI" FontSize="16" FontWeight="Bold"
                               Header="Текущая задача">
                         <DockPanel LastChildFill="False">
                             <StackPanel DockPanel.Dock="Top" Orientation="Vertical">
 
-                                <StackPanel Orientation="Horizontal">
+                                <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
                                     <Label Content="Заголовок: "/>
-                                    <TextBox Width="500" Text="{Binding SelectedTask.Title}"/>
+                                    <TextBox SpellCheck.IsEnabled="True" Language="ru-ru" Width="500" Text="{Binding SelectedTask.Title}"/>
                                 </StackPanel>
 
-                                <StackPanel Background="AliceBlue" Orientation="Horizontal">
+                                <StackPanel Background="AliceBlue" Orientation="Horizontal" Margin="0 20 0 30">
                                     <Label Content="Описание: "/>
-                                    <TextBox Width="500" Text="{Binding SelectedTask.Description, UpdateSourceTrigger=PropertyChanged}"/>
+                                    <TextBox MaxLines="6" SpellCheck.IsEnabled="True" Language="ru-ru" Width="500" Text="{Binding SelectedTask.Description, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap"/>
                                 </StackPanel>
-                                
-                                <StackPanel Orientation="Horizontal">
+
+                                <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
                                     <Label Content="Дата создания"/>
                                     <Label Content="{Binding SelectedTask.Created}"/>
                                 </StackPanel>
-                                
-                                <StackPanel Orientation="Horizontal">
+
+                                <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
                                     <Label Content="Последнее обновление"/>
-                                    <Label Content="{Binding SelectedTask.LastUpdated}"></Label>
+                                    <Label Content="{Binding SelectedTask.LastUpdated}"/>
                                 </StackPanel>
 
-                                <StackPanel Orientation="Horizontal">
+                                <StackPanel Margin="0 100 0 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <CheckBox IsChecked="{Binding SelectedTask.IsCompleted}" IsThreeState="True" />
                                     <Label Content="Выполнено"/>
-                                    <CheckBox IsChecked="{Binding SelectedTask.IsCompleted}"/>
                                 </StackPanel>
                             </StackPanel>
                             <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 10 10">
-                                <Button Margin="0 0 15 0" Width="75"
-                                        Background="#1B75D0" Command="{Binding PutTaskCommand}">
+                                <Button Margin="0 0 15 0" Height="40" Width="75"
+                                            Background="#1B75D0"
+                                            Command="{Binding PutTaskCommand}">
                                     <materialDesign:PackIcon Kind="ContentSave"/>
                                 </Button>
-                                <Button Background="#e30000" Command="{Binding DeleteTaskCommand}">
+                                <Button Background="#e30000" Height="40"
+                                            Command="{Binding DeleteTaskCommand}">
                                     <materialDesign:PackIcon Kind="TrashCan"/>
                                 </Button>
                             </StackPanel>

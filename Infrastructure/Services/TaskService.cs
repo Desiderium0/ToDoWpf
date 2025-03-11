@@ -19,7 +19,7 @@ namespace ToDoWPF.Infrastructure.Services
     {
         private HttpClient _httpClient;
         private JsonSerializerOptions _option;
-        private readonly string _url = "https://localhost:7290/api/ToDo";
+        private readonly string _url = "https://localhost:7290/api/ToDo";   
 
         public TaskService()
         {

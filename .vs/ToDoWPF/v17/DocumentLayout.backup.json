@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\infrastructure\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:infrastructure\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\models\\taskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|c:\\users\\desiderium hcs\\source\\repos\\todowpf\\infrastructure\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E002A714-AB67-4291-AA53-9FD1DD68C9F0}|ToDoWPF.csproj|solutionrelative:infrastructure\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 183,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "View\\MainWindow.xaml",
@@ -80,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TaskService.cs",
               "DocumentMoniker": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Infrastructure\\Services\\TaskService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Services\\TaskService.cs",
               "ToolTip": "C:\\Users\\Desiderium HCS\\source\\repos\\ToDoWpf\\Infrastructure\\Services\\TaskService.cs",
               "RelativeToolTip": "Infrastructure\\Services\\TaskService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAIA+wBUAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAArwBUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T07:54:15.313Z",
               "EditorCaption": ""
